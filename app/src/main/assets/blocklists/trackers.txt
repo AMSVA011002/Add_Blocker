@@ -1,0 +1,90 @@
+# AdShield - analytics, attribution and profiling endpoints
+#
+# These are not ads, they are the SDKs that follow you between apps. Blocking
+# them cuts data collection at the source and often loads pages faster.
+
+# --- Google ---------------------------------------------------------------
+google-analytics.com
+analytics.google.com
+app-measurement.com
+crashlytics.com
+firebase-settings.crashlytics.com
+
+# --- Attribution / mobile measurement ------------------------------------
+appsflyer.com
+appsflyersdk.com
+adjust.com
+adjust.world
+kochava.com
+singular.net
+tenjin.io
+
+# --- Product analytics ----------------------------------------------------
+amplitude.com
+mixpanel.com
+segment.com
+segment.io
+heapanalytics.com
+heap.io
+fullstory.com
+smartlook.com
+inspectlet.com
+hotjar.com
+crazyegg.com
+clicktale.net
+optimizely.com
+vwo.com
+abtasty.com
+
+# --- Audience measurement / DMPs -----------------------------------------
+demdex.net
+omtrdc.net
+2o7.net
+everesttech.net
+krxd.net
+bluekai.com
+ml314.com
+exelator.com
+rlcdn.com
+agkn.com
+id5-sync.com
+tapad.com
+crwdcntrl.net
+scorecardresearch.com
+quantserve.com
+quantcount.com
+comscore.com
+nielsen.com
+imrworldwide.com
+insightexpressai.com
+chartbeat.com
+parsely.com
+
+# --- Social network tracking pixels --------------------------------------
+connect.facebook.net
+analytics.tiktok.com
+tr.snapchat.com
+analytics.snapchat.com
+static.ads-twitter.com
+analytics.twitter.com
+px.ads.linkedin.com
+ct.pinterest.com
+alb.reddit.com
+
+# --- Crash / performance reporting ---------------------------------------
+newrelic.com
+bugsnag.com
+flurry.com
+
+# --- Chinese / regional analytics ----------------------------------------
+umeng.com
+umengcloud.com
+alog.umeng.com
+cnzz.com
+hm.baidu.com
+mc.yandex.ru
+appmetrica.yandex.com
+
+# --- Email / messaging analytics -----------------------------------------
+appboy.com
+braze.com

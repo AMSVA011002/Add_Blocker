@@ -1,0 +1,53 @@
+name: Build debug APK
+
+on:
+  push:
+    branches:
+      - main
+      - 'arena/**'
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      # GitHub's ubuntu-latest image already ships the Android SDK with
+      # ANDROID_HOME set; no setup action is needed (and the third-party one
+      # has been flaky), so we build directly.
+      - name: Show SDK
+        run: |
+          echo "ANDROID_HOME=$ANDROID_HOME"
+          ls "$ANDROID_HOME" || true
+
+      # Caches the Gradle distribution, the wrapper and all dependencies, so a
+      # rerun does not depend on services.gradle.org being reachable.
+      - name: Set up Gradle
+        uses: gradle/actions/setup-gradle@v4
+
+      - name: Assemble debug APK
+        run: |
+          chmod +x gradlew
+          # A cold runner downloads the Gradle distribution and every dependency.
+          # Those downloads fail now and then, so retry once before giving up.
+          ./gradlew --no-daemon --stacktrace assembleDebug || {
+            echo "::warning::first attempt failed, retrying once"
+            sleep 15
+            ./gradlew --no-daemon --stacktrace assembleDebug
+          }
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: adshield-debug-apk
+          path: app/build/outputs/apk/debug/*.apk
+          if-no-files-found: error

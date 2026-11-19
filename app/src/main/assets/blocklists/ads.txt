@@ -1,0 +1,178 @@
+# AdShield - curated ad network block list
+# One domain per line. Comments start with '#'. Suffix matching means
+# "doubleclick.net" also blocks "ad.doubleclick.net".
+#
+# This list intentionally contains only advertising infrastructure. It never
+# contains content hosts, so blocking cannot break playback or downloads.
+
+# --- Google / DoubleClick -------------------------------------------------
+doubleclick.net
+googleadservices.com
+googlesyndication.com
+googletagservices.com
+googletagmanager.com
+adservice.google.com
+ads.youtube.com
+2mdn.net
+admob.com
+appads.com
+
+# --- Amazon ---------------------------------------------------------------
+amazon-adsystem.com
+assoc-amazon.com
+
+# --- Meta audience network -----------------------------------------------
+an.facebook.com
+
+# --- AppLovin -------------------------------------------------------------
+applovin.com
+
+# --- Unity Ads ------------------------------------------------------------
+unityads.unity3d.com
+unityads.unity.com
+
+# --- ironSource / Supersonic ---------------------------------------------
+ironsrc.com
+ironsource.mobi
+supersonicads.com
+
+# --- Vungle / Liftoff -----------------------------------------------------
+vungle.com
+liftoff.io
+
+# --- AdColony / Digital Turbine ------------------------------------------
+adcolony.com
+fyber.com
+
+# --- Chartboost / Heyzap --------------------------------------------------
+chartboost.com
+heyzap.com
+
+# --- InMobi ---------------------------------------------------------------
+inmobi.com
+inmobicdn.net
+
+# --- Mintegral / Mobvista -------------------------------------------------
+mintegral.com
+mobvista.com
+
+# --- Pangle (TikTok for Business) ----------------------------------------
+pangle.io
+pangolin-sdk-toutiao.com
+
+# --- Moloco ---------------------------------------------------------------
+moloco.com
+
+# --- AppNext --------------------------------------------------------------
+appnext.com
+
+# --- LoopMe ---------------------------------------------------------------
+loopme.me
+loopme.com
+
+# --- Smaato ---------------------------------------------------------------
+smaato.net
+
+# --- Start.io / StartApp --------------------------------------------------
+startappservice.com
+startapp.com
+
+# --- Tapjoy ---------------------------------------------------------------
+tapjoy.com
+tapjoyads.com
+
+# --- Mobile ad SDKs / offer walls ----------------------------------------
+adgatemedia.com
+adjoe.io
+ayet-studios.com
+bitlabs.ai
+mobilefuse.com
+mobfox.com
+pollfish.com
+inner-active.mobi
+adincube.com
+vpon.com
+
+# --- Exchanges, SSPs and DSPs --------------------------------------------
+adnxs.com
+adsrvr.org
+casalemedia.com
+pubmatic.com
+rubiconproject.com
+openx.net
+indexww.com
+spotxchange.com
+spotx.tv
+teads.tv
+tremorhub.com
+yieldmo.com
+sharethrough.com
+33across.com
+3lift.com
+bidswitch.net
+criteo.com
+criteo.net
+taboola.com
+outbrain.com
+zemanta.com
+adform.net
+smartadserver.com
+advertising.com
+adtechus.com
+adtech.de
+adroll.com
+gumgum.com
+lijit.com
+sovrn.com
+rhythmone.com
+improvedigital.com
+magnite.com
+adition.com
+admixer.net
+adkernel.com
+mookie1.com
+mathtag.com
+turn.com
+tribalfusion.com
+specificmedia.com
+exponential.com
+conversantmedia.com
+sitescout.com
+stickyadstv.com
+yieldlab.net
+adotmob.com
+pulsepoint.com
+springserve.com
+primis.tech
+vi.ai
+unrulymedia.com
+mgid.com
+revcontent.com
+adskeeper.com
+
+# --- Creative / verification / ad servers --------------------------------
+serving-sys.com
+moatads.com
+doubleverify.com
+adsafeprotected.com
+adloox.com
+
+# --- Russian / CIS --------------------------------------------------------
+an.yandex.ru
+adfox.ru
+adriver.ru
+mytarget.com
+ad.mail.ru
+
+# --- Chinese ad networks --------------------------------------------------
+gdt.qq.com
+cpro.baidu.com
+mobads.baidu.com
+pos.baidu.com
+tanx.com
+alimama.com
+ipinyou.com
+miaozhen.com
+adview.cn
+admaster.com.cn
+irs01.com

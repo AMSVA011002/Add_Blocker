@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AdShield</string>
+    <string name="tile_label">AdShield</string>
+    <string name="notification_channel_status">Protection status</string>
+    <string name="notification_channel_status_desc">Shows whether ad blocking is running and how many lookups were blocked.</string>
+    <string name="notification_stats">Blocked %1$d of %2$d lookups today</string>
+    <string name="notification_starting">Filtering is starting…</string>
+    <string name="notification_stop">Stop</string>
+    <string name="permission_denied">VPN permission denied. AdShield cannot filter without it.</string>
+</resources>
