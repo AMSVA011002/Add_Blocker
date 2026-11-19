@@ -21,8 +21,13 @@ jobs:
           distribution: temurin
           java-version: '17'
 
-      - name: Set up Android SDK
-        uses: android-actions/setup-android@v3
+      # GitHub's ubuntu-latest image already ships the Android SDK with
+      # ANDROID_HOME set; no setup action is needed (and the third-party one
+      # has been flaky), so we build directly.
+      - name: Show SDK
+        run: |
+          echo "ANDROID_HOME=$ANDROID_HOME"
+          ls "$ANDROID_HOME" || true
 
       - name: Assemble debug APK
         run: |
