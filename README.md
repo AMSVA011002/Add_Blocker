@@ -101,6 +101,10 @@ Requirements: Android Studio (Koala or newer) or a JDK 17 + Android SDK, plus
 Or open the folder in Android Studio and press Run. The Gradle wrapper, launcher
 icons, bundled lists and all sources are in the repo — nothing else to download.
 
+No Android Studio? Every push builds an APK on GitHub Actions:
+**Actions → “Build debug APK” → latest run → Artifacts → `adshield-debug-apk`**.
+Unzip it and install `app-debug.apk` on the phone.
+
 Sideloading: copy `app-debug.apk` to the phone, tap it, allow "install unknown
 apps" for your file manager. A release build needs your own signing key:
 
