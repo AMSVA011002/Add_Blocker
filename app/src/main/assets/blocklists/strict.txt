@@ -1,0 +1,25 @@
+# AdShield - strict list, DISABLED BY DEFAULT
+#
+# These rules do block real tracking, but they also break features people
+# depend on. Read the notes before enabling this list.
+
+# Breaks Facebook / Instagram sign-in inside other apps
+graph.facebook.com
+graph.instagram.com
+
+# Breaks deep links, invite links and referral attribution
+app.link
+branch.io
+
+# Feature-flag services: some apps refuse to start correctly without them
+statsig.com
+
+# Breaks apps that use the Google IMA SDK for video players
+imasdk.googleapis.com
+
+# Breaks Firebase Cloud Messaging setup, so push notifications may stop
+firebaseinstallations.googleapis.com
+
+# Breaks Spotify playback
+spclient.wg.spotify.com
+audio-ak-spotify-com.akamaized.net
