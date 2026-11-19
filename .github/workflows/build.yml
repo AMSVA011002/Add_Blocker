@@ -37,7 +37,13 @@ jobs:
       - name: Assemble debug APK
         run: |
           chmod +x gradlew
-          ./gradlew --no-daemon --stacktrace assembleDebug
+          # A cold runner downloads the Gradle distribution and every dependency.
+          # Those downloads fail now and then, so retry once before giving up.
+          ./gradlew --no-daemon --stacktrace assembleDebug || {
+            echo "::warning::first attempt failed, retrying once"
+            sleep 15
+            ./gradlew --no-daemon --stacktrace assembleDebug
+          }
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
